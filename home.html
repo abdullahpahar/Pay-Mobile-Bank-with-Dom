@@ -30,8 +30,8 @@
                 <button class="btn btn-lg">Cash Out</button>
               </div>
               <div class="divider"></div>
-              <!-- add money form -->
-              <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+              <!-- add money form start -->
+              <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl hidden">
                 <form class="card-body">
                   <div class="form-control">
                     <label class="label">
@@ -50,10 +50,37 @@
                   </div>
                 </form>
               </div>
+               <!-- add money form End -->
+
+
+
+                <!-- Cash out  Start -->
+               <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <form class="card-body">
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Amount</span>
+                    </label>
+                    <input id="input-cash-out" type="text" placeholder="Amount" class="input input-bordered" required />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Pin</span>
+                    </label>
+                    <input id="cash-out-pin" type="password" placeholder="pin number" class="input input-bordered" autocomplete="off" required />
+                  </div>
+                  <div class="form-control mt-6">
+                    <button class="btn btn-primary" id="btn-cash-out">Cash Out</button>
+                  </div>
+                </form>
+              </div>
+                <!-- Cash out End -->
           </div>
         </div>
       </div>
    </main>
    <script src="home.js"></script>
+    <script src="addmoney.js"></script>
+    <script src="cashout.js"></script>
 </body>
 </html>
